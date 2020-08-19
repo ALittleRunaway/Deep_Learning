@@ -9,10 +9,10 @@ def w_sum(a, b):
         output += (a[i] * b[i])
     return output
 
-def neural_network(input, weight):
+def neural_network(input, weights):
     """Calculates the prediction"""
-    pred = w_sum(input, weight)
-    return round(pred, 3)
+    pred = w_sum(input, weights)
+    return round(pred, 4)
 
 toes = [8.5, 9.5, 9.9, 9.0]
 wlrec = [0.65, 0.8, 0.8, 0.9]
